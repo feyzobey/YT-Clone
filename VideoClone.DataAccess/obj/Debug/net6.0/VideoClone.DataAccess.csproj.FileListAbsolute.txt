@@ -1,0 +1,17 @@
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.DataAccess\obj\Debug\net6.0\VideoClone.DataAccess.csproj.AssemblyReference.cache
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.DataAccess\obj\Debug\net6.0\VideoClone.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.DataAccess\obj\Debug\net6.0\VideoClone.DataAccess.AssemblyInfoInputs.cache
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.DataAccess\obj\Debug\net6.0\VideoClone.DataAccess.AssemblyInfo.cs
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.DataAccess\obj\Debug\net6.0\VideoClone.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.DataAccess\bin\Debug\net6.0\VideoClone.DataAccess.deps.json
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.DataAccess\bin\Debug\net6.0\VideoClone.DataAccess.dll
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.DataAccess\bin\Debug\net6.0\VideoClone.DataAccess.pdb
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.DataAccess\bin\Debug\net6.0\VideoClone.Core.dll
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.DataAccess\bin\Debug\net6.0\VideoClone.Entities.dll
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.DataAccess\bin\Debug\net6.0\VideoClone.Core.pdb
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.DataAccess\bin\Debug\net6.0\VideoClone.Entities.pdb
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.DataAccess\obj\Debug\net6.0\VideoClone.DataAccess.csproj.CopyComplete
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.DataAccess\obj\Debug\net6.0\VideoClone.DataAccess.dll
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.DataAccess\obj\Debug\net6.0\refint\VideoClone.DataAccess.dll
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.DataAccess\obj\Debug\net6.0\VideoClone.DataAccess.pdb
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.DataAccess\obj\Debug\net6.0\ref\VideoClone.DataAccess.dll

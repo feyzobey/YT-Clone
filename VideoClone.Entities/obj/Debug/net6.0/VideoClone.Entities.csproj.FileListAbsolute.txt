@@ -1,0 +1,15 @@
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.Entities\obj\Debug\net6.0\VideoClone.Entities.csproj.AssemblyReference.cache
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.Entities\obj\Debug\net6.0\VideoClone.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.Entities\obj\Debug\net6.0\VideoClone.Entities.AssemblyInfoInputs.cache
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.Entities\obj\Debug\net6.0\VideoClone.Entities.AssemblyInfo.cs
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.Entities\obj\Debug\net6.0\VideoClone.Entities.csproj.CoreCompileInputs.cache
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.Entities\bin\Debug\net6.0\VideoClone.Entities.deps.json
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.Entities\bin\Debug\net6.0\VideoClone.Entities.dll
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.Entities\bin\Debug\net6.0\VideoClone.Entities.pdb
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.Entities\bin\Debug\net6.0\VideoClone.Core.dll
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.Entities\bin\Debug\net6.0\VideoClone.Core.pdb
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.Entities\obj\Debug\net6.0\VideoClone.Entities.csproj.CopyComplete
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.Entities\obj\Debug\net6.0\VideoClone.Entities.dll
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.Entities\obj\Debug\net6.0\refint\VideoClone.Entities.dll
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.Entities\obj\Debug\net6.0\VideoClone.Entities.pdb
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.Entities\obj\Debug\net6.0\ref\VideoClone.Entities.dll

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "c7GyakL47TdXixVlLXJDQNQZEizbsq/iBNDV0RYIa9A=",
+  "Source": "VideoClone.WebAPI",
+  "BasePath": "_content/VideoClone.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
