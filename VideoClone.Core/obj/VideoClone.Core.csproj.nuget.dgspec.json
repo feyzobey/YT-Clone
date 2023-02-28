@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj": {}
+    "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj": {
+    "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj",
         "projectName": "VideoClone.Core",
-        "projectPath": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj",
-        "packagesPath": "C:\\Users\\fyz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Core\\obj\\",
+        "projectPath": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj",
+        "packagesPath": "C:\\Users\\Mosstar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\fyz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Mosstar\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.3, )"
@@ -67,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     }

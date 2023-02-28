@@ -10,6 +10,7 @@
         "dependencies": {
           "AutoMapper": "12.0.1",
           "Autofac": "6.5.0",
+          "Autofac.Extensions.DependencyInjection": "7.2.0",
           "VideoClone.Core": "1.0.0",
           "VideoClone.DataAccess": "1.0.0"
         },
@@ -25,6 +26,18 @@
           "lib/net6.0/Autofac.dll": {
             "assemblyVersion": "6.5.0.0",
             "fileVersion": "6.5.0.0"
+          }
+        }
+      },
+      "Autofac.Extensions.DependencyInjection/7.2.0": {
+        "dependencies": {
+          "Autofac": "6.5.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Autofac.Extensions.DependencyInjection.dll": {
+            "assemblyVersion": "7.2.0.0",
+            "fileVersion": "7.2.0.0"
           }
         }
       },
@@ -64,6 +77,18 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/7.0.3": {},
+      "Microsoft.EntityFrameworkCore.Relational/7.0.3": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.3",
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {
+            "assemblyVersion": "7.0.3.0",
+            "fileVersion": "7.0.323.6302"
+          }
+        }
+      },
       "Microsoft.Extensions.Caching.Abstractions/7.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "7.0.0"
@@ -197,6 +222,32 @@
           }
         }
       },
+      "Npgsql/7.0.2": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Npgsql.dll": {
+            "assemblyVersion": "7.0.2.0",
+            "fileVersion": "7.0.2.0"
+          }
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL/7.0.3": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.3",
+          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.3",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.3",
+          "Npgsql": "7.0.2"
+        },
+        "runtime": {
+          "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "assemblyVersion": "7.0.3.0",
+            "fileVersion": "7.0.3.0"
+          }
+        }
+      },
       "System.Diagnostics.DiagnosticSource/4.7.1": {},
       "System.IdentityModel.Tokens.Jwt/6.10.0": {
         "dependencies": {
@@ -214,6 +265,7 @@
       "System.Security.Cryptography.Cng/4.5.0": {},
       "VideoClone.Core/1.0.0": {
         "dependencies": {
+          "Autofac.Extensions.DependencyInjection": "7.2.0",
           "Microsoft.EntityFrameworkCore": "7.0.3",
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
           "System.IdentityModel.Tokens.Jwt": "6.10.0"
@@ -224,7 +276,9 @@
       },
       "VideoClone.DataAccess/1.0.0": {
         "dependencies": {
+          "Autofac.Extensions.DependencyInjection": "7.2.0",
           "Microsoft.EntityFrameworkCore": "7.0.3",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.3",
           "VideoClone.Core": "1.0.0",
           "VideoClone.Entities": "1.0.0"
         },
@@ -234,6 +288,7 @@
       },
       "VideoClone.Entities/1.0.0": {
         "dependencies": {
+          "Autofac.Extensions.DependencyInjection": "7.2.0",
           "VideoClone.Core": "1.0.0"
         },
         "runtime": {
@@ -254,6 +309,13 @@
       "sha512": "sha512-sm6HWWBDEoTPGXeyOchMygJ/7L89VxmVH72BFxakG88J34AVjA8RMi5jbv3PdpUtXI/d9ZLKOaxCmOSIo2K4aA==",
       "path": "autofac/6.5.0",
       "hashPath": "autofac.6.5.0.nupkg.sha512"
+    },
+    "Autofac.Extensions.DependencyInjection/7.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-S2Jor8pTV+8QSs96ENq/FhGdnrWsntGs93z0OXYlIivUWGPNXQHNCjFPfSBeBlHClvJFEXMvlkY32bAKy2YkPg==",
+      "path": "autofac.extensions.dependencyinjection/7.2.0",
+      "hashPath": "autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512"
     },
     "AutoMapper/12.0.1": {
       "type": "package",
@@ -289,6 +351,13 @@
       "sha512": "sha512-CLyRWFLwaOUZNPEia/aBMzFxZqm/ITKt3B+yUFtrg4Ys5VF3n2gvneuItC9IhpeOcjfdSgu/yUKf8y/IsNHs5A==",
       "path": "microsoft.entityframeworkcore.analyzers/7.0.3",
       "hashPath": "microsoft.entityframeworkcore.analyzers.7.0.3.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Relational/7.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RxNNjtTrxsMtdBtgoXGRSy8uCXaBHaVzIonTeo7+Ys+N0yEWwhf2E74cxneyunMi13Ezlld10ecCHlDubEU/Pw==",
+      "path": "microsoft.entityframeworkcore.relational/7.0.3",
+      "hashPath": "microsoft.entityframeworkcore.relational.7.0.3.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/7.0.0": {
       "type": "package",
@@ -373,6 +442,20 @@
       "sha512": "sha512-qbf1NslutDB4oLrriYTJpy7oB1pbh2ej2lEHd2IPDQH9C74ysOdhU5wAC7KoXblldbo7YsNR2QYFOqQM/b0Rsg==",
       "path": "microsoft.identitymodel.tokens/6.10.0",
       "hashPath": "microsoft.identitymodel.tokens.6.10.0.nupkg.sha512"
+    },
+    "Npgsql/7.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/k12hfmg4PI0IU2UTLN6n0s/FKUfox8+RdWtzgADYZoyks7GH82WLyXm27eeqatsi/nmiK9lO3HyULlTD87szg==",
+      "path": "npgsql/7.0.2",
+      "hashPath": "npgsql.7.0.2.nupkg.sha512"
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL/7.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3iVz7vcPAZt6iBSjJ8XyjtIP19jilNOJqTiTCs2UHWhpTyP+FbNhnzCBE/oyD3n49McmmenjKpva+yTy7q1z/g==",
+      "path": "npgsql.entityframeworkcore.postgresql/7.0.3",
+      "hashPath": "npgsql.entityframeworkcore.postgresql.7.0.3.nupkg.sha512"
     },
     "System.Diagnostics.DiagnosticSource/4.7.1": {
       "type": "package",

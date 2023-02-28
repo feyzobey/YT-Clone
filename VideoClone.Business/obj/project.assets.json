@@ -18,6 +18,23 @@
           }
         }
       },
+      "Autofac.Extensions.DependencyInjection/7.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Autofac.Extensions.DependencyInjection.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Autofac.Extensions.DependencyInjection.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "AutoMapper/12.0.1": {
         "type": "package",
         "dependencies": {
@@ -86,6 +103,23 @@
         },
         "runtime": {
           "lib/netstandard2.0/_._": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Relational/7.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.3",
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/7.0.0": {
@@ -308,6 +342,42 @@
           }
         }
       },
+      "Npgsql/7.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL/7.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "[7.0.3, 8.0.0)",
+          "Microsoft.EntityFrameworkCore.Abstractions": "[7.0.3, 8.0.0)",
+          "Microsoft.EntityFrameworkCore.Relational": "[7.0.3, 8.0.0)",
+          "Npgsql": "7.0.2"
+        },
+        "compile": {
+          "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Diagnostics.DiagnosticSource/4.7.1": {
         "type": "package",
         "compile": {
@@ -375,6 +445,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Autofac.Extensions.DependencyInjection": "7.2.0",
           "Microsoft.EntityFrameworkCore": "7.0.3",
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
           "System.IdentityModel.Tokens.Jwt": "6.10.0"
@@ -390,7 +461,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Autofac.Extensions.DependencyInjection": "7.2.0",
           "Microsoft.EntityFrameworkCore": "7.0.3",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.3",
           "VideoClone.Core": "1.0.0",
           "VideoClone.Entities": "1.0.0"
         },
@@ -405,6 +478,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Autofac.Extensions.DependencyInjection": "7.2.0",
           "VideoClone.Core": "1.0.0"
         },
         "compile": {
@@ -436,6 +510,30 @@
         "lib/netstandard2.0/Autofac.xml",
         "lib/netstandard2.1/Autofac.dll",
         "lib/netstandard2.1/Autofac.xml"
+      ]
+    },
+    "Autofac.Extensions.DependencyInjection/7.2.0": {
+      "sha512": "S2Jor8pTV+8QSs96ENq/FhGdnrWsntGs93z0OXYlIivUWGPNXQHNCjFPfSBeBlHClvJFEXMvlkY32bAKy2YkPg==",
+      "type": "package",
+      "path": "autofac.extensions.dependencyinjection/7.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",
+        "autofac.extensions.dependencyinjection.nuspec",
+        "icon.png",
+        "lib/net5.0/Autofac.Extensions.DependencyInjection.dll",
+        "lib/net5.0/Autofac.Extensions.DependencyInjection.pdb",
+        "lib/net5.0/Autofac.Extensions.DependencyInjection.xml",
+        "lib/net6.0/Autofac.Extensions.DependencyInjection.dll",
+        "lib/net6.0/Autofac.Extensions.DependencyInjection.pdb",
+        "lib/net6.0/Autofac.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.pdb",
+        "lib/netstandard2.0/Autofac.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.pdb",
+        "lib/netstandard2.1/Autofac.Extensions.DependencyInjection.xml"
       ]
     },
     "AutoMapper/12.0.1": {
@@ -563,6 +661,20 @@
         "lib/netstandard2.0/_._",
         "microsoft.entityframeworkcore.analyzers.7.0.3.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Relational/7.0.3": {
+      "sha512": "RxNNjtTrxsMtdBtgoXGRSy8uCXaBHaVzIonTeo7+Ys+N0yEWwhf2E74cxneyunMi13Ezlld10ecCHlDubEU/Pw==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.relational/7.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.xml",
+        "microsoft.entityframeworkcore.relational.7.0.3.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
     "Microsoft.Extensions.Caching.Abstractions/7.0.0": {
@@ -916,6 +1028,48 @@
         "microsoft.identitymodel.tokens.nuspec"
       ]
     },
+    "Npgsql/7.0.2": {
+      "sha512": "/k12hfmg4PI0IU2UTLN6n0s/FKUfox8+RdWtzgADYZoyks7GH82WLyXm27eeqatsi/nmiK9lO3HyULlTD87szg==",
+      "type": "package",
+      "path": "npgsql/7.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net5.0/Npgsql.dll",
+        "lib/net5.0/Npgsql.xml",
+        "lib/net6.0/Npgsql.dll",
+        "lib/net6.0/Npgsql.xml",
+        "lib/net7.0/Npgsql.dll",
+        "lib/net7.0/Npgsql.xml",
+        "lib/netcoreapp3.1/Npgsql.dll",
+        "lib/netcoreapp3.1/Npgsql.xml",
+        "lib/netstandard2.0/Npgsql.dll",
+        "lib/netstandard2.0/Npgsql.xml",
+        "lib/netstandard2.1/Npgsql.dll",
+        "lib/netstandard2.1/Npgsql.xml",
+        "npgsql.7.0.2.nupkg.sha512",
+        "npgsql.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL/7.0.3": {
+      "sha512": "3iVz7vcPAZt6iBSjJ8XyjtIP19jilNOJqTiTCs2UHWhpTyP+FbNhnzCBE/oyD3n49McmmenjKpva+yTy7q1z/g==",
+      "type": "package",
+      "path": "npgsql.entityframeworkcore.postgresql/7.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
+        "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.xml",
+        "lib/net7.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
+        "lib/net7.0/Npgsql.EntityFrameworkCore.PostgreSQL.xml",
+        "npgsql.entityframeworkcore.postgresql.7.0.3.nupkg.sha512",
+        "npgsql.entityframeworkcore.postgresql.nuspec",
+        "postgresql.png"
+      ]
+    },
     "System.Diagnostics.DiagnosticSource/4.7.1": {
       "sha512": "j81Lovt90PDAq8kLpaJfJKV/rWdWuEk6jfV+MBkee33vzYLEUsy4gXK8laa9V2nZlLM9VM9yA/OOQxxPEJKAMw==",
       "type": "package",
@@ -1069,24 +1223,25 @@
     "net6.0": [
       "AutoMapper >= 12.0.1",
       "Autofac >= 6.5.0",
+      "Autofac.Extensions.DependencyInjection >= 7.2.0",
       "VideoClone.Core >= 1.0.0",
       "VideoClone.DataAccess >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fyz\\.nuget\\packages\\": {}
+    "C:\\Users\\Mosstar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Business\\VideoClone.Business.csproj",
+      "projectUniqueName": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Business\\VideoClone.Business.csproj",
       "projectName": "VideoClone.Business",
-      "projectPath": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Business\\VideoClone.Business.csproj",
-      "packagesPath": "C:\\Users\\fyz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Business\\obj\\",
+      "projectPath": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Business\\VideoClone.Business.csproj",
+      "packagesPath": "C:\\Users\\Mosstar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\fyz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Mosstar\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -1098,11 +1253,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj": {
-              "projectPath": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj"
+            "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj": {
+              "projectPath": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj"
             },
-            "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.DataAccess\\VideoClone.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.DataAccess\\VideoClone.DataAccess.csproj"
+            "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.DataAccess\\VideoClone.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.DataAccess\\VideoClone.DataAccess.csproj"
             }
           }
         }
@@ -1124,6 +1279,10 @@
           "Autofac": {
             "target": "Package",
             "version": "[6.5.0, )"
+          },
+          "Autofac.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[7.2.0, )"
           }
         },
         "imports": [
@@ -1142,7 +1301,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.406\\RuntimeIdentifierGraph.json"
       }
     }
   }
