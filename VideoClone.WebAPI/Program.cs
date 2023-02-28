@@ -73,7 +73,7 @@ builder.Services.AddSwaggerGen(c =>
 //Dbcontext and connection string
 builder.Services.AddDbContext<VideoCloneContext>(options =>
 {
-    var connectionStr = builder.Configuration.GetConnectionString("Videons");
+    var connectionStr = builder.Configuration.GetConnectionString("VideoClone");
     options.UseNpgsql(connectionStr);
 });
 
