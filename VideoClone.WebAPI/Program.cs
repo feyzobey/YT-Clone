@@ -10,15 +10,13 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 using VideoClone.Business.DependencyResolvers.Autofac;
 using VideoClone.Core.Utilities.Security.Jwt;
 using VideoClone.Business.AutoMapper;
-using VideoClone.Business.DependencyResolvers.Autofac;
 using VideoClone.Core.Utilities.Security.Encryption;
-using VideoClone.Core.Utilities.Security.Jwt;
 using VideoClone.DataAccess.Concrete.EntityFramework;
 
+// creates a new web application
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
 builder.Configuration.Dispose();
 
@@ -48,7 +46,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 //add swagger with JWT
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Videons.WebAPI", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "VideoClone.WebAPI", Version = "v1" });
 
     var jwtSecurityScheme = new OpenApiSecurityScheme
     {

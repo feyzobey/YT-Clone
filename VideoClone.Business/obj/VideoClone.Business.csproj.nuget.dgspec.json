@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Business\\VideoClone.Business.csproj": {}
+    "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Business\\VideoClone.Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Business\\VideoClone.Business.csproj": {
+    "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Business\\VideoClone.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Business\\VideoClone.Business.csproj",
+        "projectUniqueName": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Business\\VideoClone.Business.csproj",
         "projectName": "VideoClone.Business",
-        "projectPath": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Business\\VideoClone.Business.csproj",
-        "packagesPath": "C:\\Users\\Mosstar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Business\\obj\\",
+        "projectPath": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Business\\VideoClone.Business.csproj",
+        "packagesPath": "C:\\Users\\fyz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mosstar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\fyz\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -26,11 +26,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj": {
-                "projectPath": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj"
+              "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj": {
+                "projectPath": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj"
               },
-              "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.DataAccess\\VideoClone.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.DataAccess\\VideoClone.DataAccess.csproj"
+              "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.DataAccess\\VideoClone.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.DataAccess\\VideoClone.DataAccess.csproj"
               }
             }
           }
@@ -74,21 +74,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj": {
+    "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj",
+        "projectUniqueName": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj",
         "projectName": "VideoClone.Core",
-        "projectPath": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj",
-        "packagesPath": "C:\\Users\\Mosstar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Core\\obj\\",
+        "projectPath": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj",
+        "packagesPath": "C:\\Users\\fyz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mosstar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\fyz\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -112,21 +112,39 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Autofac.Extensions.DependencyInjection": {
+            "IdentityModel": {
               "target": "Package",
-              "version": "[7.2.0, )"
+              "version": "[6.1.0-preview.2, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.14, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.3, )"
+              "version": "[6.0.14, )"
             },
-            "Microsoft.Extensions.Configuration.Abstractions": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[6.0.14, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.27.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.2.3, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[6.10.0, )"
+              "version": "[6.27.0, )"
             }
           },
           "imports": [
@@ -145,21 +163,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.DataAccess\\VideoClone.DataAccess.csproj": {
+    "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.DataAccess\\VideoClone.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.DataAccess\\VideoClone.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.DataAccess\\VideoClone.DataAccess.csproj",
         "projectName": "VideoClone.DataAccess",
-        "projectPath": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.DataAccess\\VideoClone.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Mosstar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.DataAccess\\VideoClone.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\fyz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mosstar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\fyz\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -171,11 +189,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj": {
-                "projectPath": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj"
+              "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj": {
+                "projectPath": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj"
               },
-              "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Entities\\VideoClone.Entities.csproj": {
-                "projectPath": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Entities\\VideoClone.Entities.csproj"
+              "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Entities\\VideoClone.Entities.csproj": {
+                "projectPath": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Entities\\VideoClone.Entities.csproj"
               }
             }
           }
@@ -231,21 +249,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Entities\\VideoClone.Entities.csproj": {
+    "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Entities\\VideoClone.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Entities\\VideoClone.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Entities\\VideoClone.Entities.csproj",
         "projectName": "VideoClone.Entities",
-        "projectPath": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Entities\\VideoClone.Entities.csproj",
-        "packagesPath": "C:\\Users\\Mosstar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Entities\\obj\\",
+        "projectPath": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Entities\\VideoClone.Entities.csproj",
+        "packagesPath": "C:\\Users\\fyz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mosstar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\fyz\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -257,8 +275,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj": {
-                "projectPath": "C:\\Users\\Mosstar\\Desktop\\feyzullah\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj"
+              "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj": {
+                "projectPath": "C:\\Users\\fyz\\Desktop\\YT-Clone\\VideoClone.Core\\VideoClone.Core.csproj"
               }
             }
           }
@@ -294,7 +312,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

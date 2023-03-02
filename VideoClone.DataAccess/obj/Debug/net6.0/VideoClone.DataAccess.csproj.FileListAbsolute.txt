@@ -34,3 +34,5 @@ C:\Users\Mosstar\Desktop\feyzullah\YT-Clone\VideoClone.DataAccess\obj\Debug\net6
 C:\Users\Mosstar\Desktop\feyzullah\YT-Clone\VideoClone.DataAccess\obj\Debug\net6.0\VideoClone.DataAccess.pdb
 C:\Users\Mosstar\Desktop\feyzullah\YT-Clone\VideoClone.DataAccess\obj\Debug\net6.0\VideoClone.DataAccess.genruntimeconfig.cache
 C:\Users\Mosstar\Desktop\feyzullah\YT-Clone\VideoClone.DataAccess\obj\Debug\net6.0\ref\VideoClone.DataAccess.dll
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.DataAccess\bin\Debug\net6.0\VideoClone.DataAccess.runtimeconfig.json
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.DataAccess\obj\Debug\net6.0\VideoClone.DataAccess.genruntimeconfig.cache

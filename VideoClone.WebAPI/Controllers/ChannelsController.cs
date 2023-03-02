@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using VideoClone.Business.Abstract;
+using VideoClone.Core.Utilities.Results;
 using VideoClone.Entities.DTOs;
 
 namespace VideoClone.WebAPI.Controllers;
@@ -53,6 +54,17 @@ public class ChannelsController : ControllerBase
     {
         var result = _channelService.Update(id, channelUpdateDto);
 
+        return result.Success
+            ? Ok(result.Message)
+            : BadRequest(result.Message);
+    }
+    
+    [HttpDelete("{name}")]
+    [Authorize]
+    public IActionResult Delete(string name)
+    {
+        var result = _channelService.Delete(name);
+        
         return result.Success
             ? Ok(result.Message)
             : BadRequest(result.Message);

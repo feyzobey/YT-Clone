@@ -19,7 +19,11 @@ public class JwtHelper : ITokenHelper
 
         var tokenOptionsSection = Configuration.GetSection("TokenOptions");
         _tokenOptions = new TokenOptions();
-        //tokenOptionsSection.Bind(_tokenOptions);
+        tokenOptionsSection.Bind(_tokenOptions);
+        _tokenOptions.Issuer = tokenOptionsSection["Issuer"];
+        _tokenOptions.Audience = tokenOptionsSection["Audience"];
+        _tokenOptions.SecurityKey = tokenOptionsSection["SecurityKey"];
+        _tokenOptions.AccessTokenExpiration = int.Parse(tokenOptionsSection["AccessTokenExpiration"]);
 
         _accessTokenExpiration = DateTime.Now.AddHours(_tokenOptions.AccessTokenExpiration);
     }
@@ -45,8 +49,8 @@ public class JwtHelper : ITokenHelper
         SigningCredentials signingCredentials, List<OperationClaim> operationClaims)
     {
         var jwt = new JwtSecurityToken(
-            issuer: tokenOptions.Issuer,
-            audience: tokenOptions.Audience,
+            tokenOptions.Issuer,
+            tokenOptions.Audience,
             expires: _accessTokenExpiration,
             notBefore: DateTime.Now,
             claims: SetClaims(user, operationClaims),

@@ -6,11 +6,19 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+
     <ItemGroup>
-      <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.2.0" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
-      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
-      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.10.0" />
+        <PackageReference Include="IdentityModel" Version="6.1.0-preview.2"/>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.14"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.14"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.14">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.27.0"/>
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.8"/>
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.2.3"/>
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.27.0"/>
     </ItemGroup>
 
 </Project>

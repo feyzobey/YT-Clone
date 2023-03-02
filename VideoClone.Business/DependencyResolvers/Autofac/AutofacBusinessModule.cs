@@ -1,6 +1,4 @@
 using Autofac;
-using Autofac.Core;
-using Autofac.Core.Registration;
 using VideoClone.Business.Abstract;
 using VideoClone.Business.Concrete;
 using VideoClone.Core.Utilities.Security.Jwt;

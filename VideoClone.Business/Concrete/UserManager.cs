@@ -54,4 +54,11 @@ public class UserManager : IUserService
             ? new SuccessResult("Password updated.")
             : new ErrorResult("Password cannot updated");
     }
+
+    public IResult Delete(User user)
+    {
+        return _userDal.Delete(user)
+            ? new SuccessResult("User deleted.")
+            : new ErrorResult("User cannot deleted");
+    }
 }

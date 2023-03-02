@@ -128,3 +128,10 @@ C:\Users\Mosstar\Desktop\feyzullah\YT-Clone\VideoClone.WebAPI\obj\Debug\net6.0\r
 C:\Users\Mosstar\Desktop\feyzullah\YT-Clone\VideoClone.WebAPI\obj\Debug\net6.0\VideoClone.WebAPI.pdb
 C:\Users\Mosstar\Desktop\feyzullah\YT-Clone\VideoClone.WebAPI\obj\Debug\net6.0\VideoClone.WebAPI.genruntimeconfig.cache
 C:\Users\Mosstar\Desktop\feyzullah\YT-Clone\VideoClone.WebAPI\obj\Debug\net6.0\ref\VideoClone.WebAPI.dll
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.WebAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.WebAPI\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.WebAPI\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.WebAPI\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.WebAPI\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.WebAPI\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\fyz\Desktop\YT-Clone\VideoClone.WebAPI\bin\Debug\net6.0\IdentityModel.dll

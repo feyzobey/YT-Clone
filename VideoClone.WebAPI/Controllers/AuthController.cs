@@ -3,6 +3,8 @@ using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using VideoClone.Business.Abstract;
+using VideoClone.Core.Utilities.Results;
+using VideoClone.Core.Utilities.Security.Hashing;
 using VideoClone.Entities.DTOs;
 
 namespace VideoClone.WebAPI.Controllers;
@@ -67,6 +69,23 @@ public class AuthController : ControllerBase
         var userId = new Guid(currentUser.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? string.Empty);
 
         var result = _userService.ChangePassword(userId, changePasswordDto);
+        return result.Success
+            ? Ok(result)
+            : BadRequest(result);
+    }
+    
+    [HttpDelete("delete")]
+    [Authorize]
+    public IActionResult Delete([FromBody] UserForDeleteDto userForDeleteDto)
+    {
+        var user = _userService.GetByEmail(userForDeleteDto.Email);
+        
+        if (user == null) return BadRequest("User not found!");
+        
+        if (!HashingHelper.VerifyPasswordHash(userForDeleteDto.Password, user.PasswordHash, user.PasswordSalt))
+            return BadRequest("Password is incorrect!");
+            
+        var result = _userService.Delete(user);
         return result.Success
             ? Ok(result)
             : BadRequest(result);

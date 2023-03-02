@@ -11,4 +11,5 @@ public interface IUserService
     IResult Add(User user);
     List<OperationClaim> GetClaims(User user);
     IResult ChangePassword(Guid userId, ChangePasswordDto changePasswordDto);
+    IResult Delete(User user);
 }

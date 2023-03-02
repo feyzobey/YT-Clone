@@ -28,6 +28,11 @@ public class ChannelManager : IChannelService
         return _channelDal.Get(c => c.Id == channelId);
     }
 
+    public Channel GetByName(string name)
+    {
+        return _channelDal.Get(c => c.Name == name);
+    }
+
     public Channel GetBySlug(string slug)
     {
         return _channelDal.Get(c => c.Slug == slug);
@@ -66,5 +71,16 @@ public class ChannelManager : IChannelService
         return _channelDal.Update(channel)
             ? new SuccessResult("Channel updated.")
             : new ErrorResult("Channel cannot updated!");
+    }
+
+    public IResult Delete(string Name)
+    {
+        var channel = GetByName(Name);
+
+        if (channel == null) return new ErrorResult("Channel cannot found!");
+
+        return _channelDal.Delete(channel)
+            ? new SuccessResult("Channel deleted.")
+            : new ErrorResult("Channel cannot deleted!");
     }
 }

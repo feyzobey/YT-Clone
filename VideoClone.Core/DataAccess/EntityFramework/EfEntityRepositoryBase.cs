@@ -29,7 +29,7 @@ public abstract class EfEntityRepositoryBase<TEntity, TContext> : IEntityReposit
 
     public bool Add(TEntity entity)
     {
-        entity.CreatedAt = DateTime.Now;
+        entity.CreatedAt = DateTime.Now.ToUniversalTime();
 
         var entry = Context.Entry(entity);
         entry.State = EntityState.Added;
@@ -39,7 +39,7 @@ public abstract class EfEntityRepositoryBase<TEntity, TContext> : IEntityReposit
 
     public bool Update(TEntity entity)
     {
-        entity.UpdatedAt = DateTime.Now;
+        entity.UpdatedAt = DateTime.Now.ToUniversalTime();
 
         var entry = Context.Entry(entity);
         entry.State = EntityState.Modified;
