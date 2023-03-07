@@ -2,8 +2,8 @@
 
 namespace VideoClone.Entities.DTOs;
 
-public class ChannelDeleteDto : IDto
+public class PlaylistCreateUpdateDto : IDto
 {
     public string Name { get; set; }
-    public Guid UserId { get; set; }
+    public Guid ChannelId { get; set; } 
 }

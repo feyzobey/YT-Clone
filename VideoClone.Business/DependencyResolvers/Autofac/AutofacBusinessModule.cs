@@ -22,5 +22,8 @@ public class AutofacBusinessModule : Module
 
         builder.RegisterType<AuthManager>().As<IAuthService>();
         builder.RegisterType<JwtHelper>().As<ITokenHelper>();
+
+        builder.RegisterType<PlaylistManager>().As<IPlaylistService>();
+        builder.RegisterType<EfPlaylistDal>().As<IPlaylistDal>();
     }
 }

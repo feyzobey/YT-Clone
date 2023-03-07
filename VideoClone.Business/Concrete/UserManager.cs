@@ -10,7 +10,6 @@ namespace VideoClone.Business.Concrete;
 public class UserManager : IUserService
 {
     private readonly IUserDal _userDal;
-
     public UserManager(IUserDal userDal)
     {
         _userDal = userDal;

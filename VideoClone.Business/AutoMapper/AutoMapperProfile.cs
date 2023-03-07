@@ -11,7 +11,6 @@ public class AutoMapperProfile : Profile
     {
         CreateMap<Category, CategoryDto>();
         CreateMap<CategoryCreateUpdateDto, Category>();
-
         CreateMap<User, CurrentUserDto>();
     }
 }

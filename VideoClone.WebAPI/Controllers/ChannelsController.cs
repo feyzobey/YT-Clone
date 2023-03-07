@@ -1,14 +1,13 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using VideoClone.Business.Abstract;
-using VideoClone.Core.Utilities.Results;
 using VideoClone.Entities.DTOs;
 
 namespace VideoClone.WebAPI.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class ChannelsController : ControllerBase
+public class ChannelsController : ControllerBase 
 {
     private readonly IChannelService _channelService;
 
@@ -48,22 +47,22 @@ public class ChannelsController : ControllerBase
             : BadRequest(result.Message);
     }
 
-    [HttpPut("{id}")]
+    [HttpPut("{id}/{name}")]
     [Authorize]
-    public IActionResult Update(Guid id, ChannelUpdateDto channelUpdateDto)
+    public IActionResult Update(Guid id, string name)
     {
-        var result = _channelService.Update(id, channelUpdateDto);
+        var result = _channelService.Update(id, name);
 
         return result.Success
             ? Ok(result.Message)
             : BadRequest(result.Message);
     }
     
-    [HttpDelete("{name}")]
+    [HttpDelete("{id}")]
     [Authorize]
-    public IActionResult Delete(string name)
+    public IActionResult Delete(Guid id)
     {
-        var result = _channelService.Delete(name);
+        var result = _channelService.Delete(id);
         
         return result.Success
             ? Ok(result.Message)

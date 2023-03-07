@@ -9,12 +9,10 @@ namespace VideoClone.Business.Concrete;
 public class ChannelManager : IChannelService
 {
     private readonly IChannelDal _channelDal;
-    private readonly IUserService _userService;
 
-    public ChannelManager(IChannelDal channelDal, IUserService userService)
+    public ChannelManager(IChannelDal channelDal)
     {
         _channelDal = channelDal;
-        _userService = userService;
     }
 
     public IDataResult<IList<Channel>> GetList()
@@ -23,59 +21,40 @@ public class ChannelManager : IChannelService
         return new SuccessDataResult<IList<Channel>>(channels);
     }
 
-    public Channel GetById(Guid channelId)
+    public Channel GetById(Guid id)
     {
-        return _channelDal.Get(c => c.Id == channelId);
+        return _channelDal.Get(c => c.Id == id);
     }
-
-    public Channel GetByName(string name)
-    {
-        return _channelDal.Get(c => c.Name == name);
-    }
-
-    public Channel GetBySlug(string slug)
-    {
-        return _channelDal.Get(c => c.Slug == slug);
-    }
-
+    
     public IResult Add(ChannelDto channelDto)
     {
-        var userExist = _userService.GetById(channelDto.UserId);
-        if (userExist == null) return new ErrorResult("Invalid user");
-
         var channel = new Channel
         {
             Name = channelDto.Name,
             Verified = false,
-            UserId = channelDto.UserId
         };
 
         if (!_channelDal.Add(channel)) return new ErrorResult("Channel cannot created!");
 
-        channel.Slug = channel.Id.ToString();
-        _channelDal.Update(channel);
-
         return new SuccessResult("Channel created.");
     }
 
-    public IResult Update(Guid id, ChannelUpdateDto channelUpdateDto)
+    public IResult Update(Guid id, string name)
     {
         var channel = GetById(id);
 
         if (channel == null) return new ErrorResult("Channel cannot found!");
 
-        channel.Name = channelUpdateDto.Name;
-        channel.Slug = channelUpdateDto.Slug;
-        channel.ImagePath = channelUpdateDto.ImagePath;
+        channel.Name = name;
 
         return _channelDal.Update(channel)
             ? new SuccessResult("Channel updated.")
             : new ErrorResult("Channel cannot updated!");
     }
 
-    public IResult Delete(string Name)
+    public IResult Delete(Guid id)
     {
-        var channel = GetByName(Name);
+        var channel = GetById(id);
 
         if (channel == null) return new ErrorResult("Channel cannot found!");
 

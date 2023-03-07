@@ -7,10 +7,8 @@ namespace VideoClone.Business.Abstract;
 public interface IChannelService
 {
     IDataResult<IList<Channel>> GetList();
-    Channel GetById(Guid channelId);
-    Channel GetByName(string name);
-    Channel GetBySlug(string slug);
+    Channel GetById(Guid id);
     IResult Add(ChannelDto channelDto);
-    IResult Update(Guid id, ChannelUpdateDto channelUpdateDto);
-    IResult Delete(string name);
+    IResult Update(Guid id, string name);
+    IResult Delete(Guid id);
 }
