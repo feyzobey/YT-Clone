@@ -20,7 +20,8 @@ public class PlaylistManager : IPlaylistService
         var playlist = new Playlist
         {
             Name = playlistCreateUpdateDto.Name,
-            ChannelId = playlistCreateUpdateDto.ChannelId
+            ChannelId = playlistCreateUpdateDto.ChannelId,
+            Description = playlistCreateUpdateDto.Description
         };
 
         if (!_playlistDal.Add(playlist)) return new ErrorResult("Playlist cannot created!");

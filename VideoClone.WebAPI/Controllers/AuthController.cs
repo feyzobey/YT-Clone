@@ -3,7 +3,6 @@ using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using VideoClone.Business.Abstract;
-using VideoClone.Core.Utilities.Results;
 using VideoClone.Core.Utilities.Security.Hashing;
 using VideoClone.Entities.DTOs;
 
@@ -16,7 +15,6 @@ public class AuthController : ControllerBase
     private readonly IAuthService _authService;
     private readonly IMapper _mapper;
     private readonly IUserService _userService;
-
     public AuthController(IAuthService authService, IUserService userService, IMapper mapper)
     {
         _authService = authService;

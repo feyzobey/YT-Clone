@@ -10,7 +10,7 @@ public class ChannelManager : IChannelService
 {
     private readonly IChannelDal _channelDal;
 
-    public ChannelManager(IChannelDal channelDal)
+    public ChannelManager(IChannelDal channelDal,IUserService userService)
     {
         _channelDal = channelDal;
     }
@@ -31,7 +31,8 @@ public class ChannelManager : IChannelService
         var channel = new Channel
         {
             Name = channelDto.Name,
-            Verified = false,
+            UserId = channelDto.UserId,
+            Verified = false
         };
 
         if (!_channelDal.Add(channel)) return new ErrorResult("Channel cannot created!");

@@ -19,7 +19,7 @@ public class UserManager : IUserService
     {
         return _userDal.Get(u => u.Id == id);
     }
-
+    
     public User GetByEmail(string email)
     {
         return _userDal.Get(u => u.Email == email);
